@@ -10864,12 +10864,12 @@ p {
   padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-size: 35px;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   font-family: "arial";
   margin-bottom: 4rem;
@@ -10967,21 +10967,19 @@ p {
 }
 header.masthead {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   text-align: center;
   color: #fff;
-  background-color: #ccc;
+  background-color: #503cec;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 200px !important;
+  height: 100px !important;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
-  margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -11001,7 +10999,6 @@ header.masthead .masthead-heading {
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
     font-size: 4.5rem;
@@ -11336,4 +11333,18 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.flag-icons {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.head-logo {
+  height: 70px;
+}
+
+.container-logo {
+  margin-top: -60px;
+  margin-bottom: 20px;
 }
