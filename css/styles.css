@@ -642,6 +642,28 @@ progress {
   margin-left: auto;
 }
 
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: flex;
+  align-items: center; /* Alinea el texto con el icono */
+  margin-bottom: 8px;
+}
+
+.icon {
+  width: 20px; /* Tamaño fijo para los iconos */
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  flex-shrink: 0;
+}
+
+
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -10846,11 +10868,11 @@ p {
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 400;
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "arial";
   margin-bottom: 4rem;
+  color: #000;
 }
 
 @media (min-width: 768px) {
@@ -10943,15 +10965,16 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-color: #ccc;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  height: 200px !important;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10970,8 +10993,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -11014,9 +11037,8 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-caption {
+#portfolio .portfolio-item . {
   padding: 1.5rem;
-  text-align: center;
   background-color: #fff;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
