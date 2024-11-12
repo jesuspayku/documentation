@@ -11420,7 +11420,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .head-links:hover {
-  color: #000;
+  color: #000 !important;
   font-style: arial !important;
   font-size: 15px;
 }
