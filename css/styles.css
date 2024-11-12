@@ -11405,3 +11405,58 @@ section#contact form#contactForm :-ms-input-placeholder {
 .footer-title {
   margin-top: 50px; /* Ajusta el tamaño según sea necesario */
 }
+
+.links {
+  color: #000;
+  font-style: arial !important;
+  font-size: 15px;
+}
+
+.links:hover {
+  color: #503cec;
+}
+
+.small-description {
+  font-size: 10px;
+}
+
+.icon-color-1 {
+  color: #503cec !important;
+}
+
+.icon-color-2 {
+  color: #495057 !important;
+}
+
+.icon-color-3 {
+  color: #bb2d3b !important;
+}
+
+.icon-color-4 {
+  color: #13653f !important;
+}
+
+.icon-color-5 {
+  color: #d63384 !important;
+}
+
+.icon-color-6 {
+  color: #fd7e14 !important;
+}
+
+.icon-color-7 {
+  color: #000 !important;
+}
+
+.icon-color-8 {
+  color: #dc3545 !important;
+}
+
+.icon-color-9 {
+  color: #D1A381 !important;
+}
+
+ul.coming-soon li {
+  font-size: 20px;
+  font-weight: 600;
+}
