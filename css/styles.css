@@ -102,7 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #f8efef;
+  background-color: #fff;
 }
 
 hr {
@@ -8180,7 +8180,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #fff;
 }
 
 .bg-dark {
@@ -10974,7 +10974,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 100px !important;
+  height: 80px !important;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11342,6 +11342,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .head-logo {
   height: 70px;
+}
+
+.payku-logo {
+  height: 150px;
 }
 
 .container-logo {
