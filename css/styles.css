@@ -11340,8 +11340,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 1.5em;
 }
 
+.flag-head-icons {
+  width: 2em;
+  height: 2em;
+}
+
 .head-logo {
   height: 70px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-top: 20px;
+  fill: #ccc !important;
 }
 
 .payku-logo {
@@ -11351,4 +11362,46 @@ section#contact form#contactForm :-ms-input-placeholder {
 .container-logo {
   margin-top: -60px;
   margin-bottom: 20px;
+}
+
+/* Asegurarse que la clase .masthead tiene display: flex */
+.masthead {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: flex-end; /* Alinea a la derecha */
+  height: 100vh; /* Esto hace que ocupe toda la altura de la ventana */
+}
+
+@media (max-width: 768px) {
+  .masthead {
+      flex-direction: column; /* Las banderas estarán en columna en móviles */
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center;     /* Centra verticalmente */
+      height: 100vh;           /* Ocupa toda la altura de la pantalla */
+      flex-direction: row;     /* Alinea las banderas en fila */
+      gap: 20px;    
+      padding-bottom: 40px;
+  }
+  .flag-head-icons {
+      width: 40px;  /* Ajusta el tamaño de las banderas */
+      height: auto;
+  }
+}
+
+/* Ajustar la imagen de la bandera */
+.flag-centered {
+  max-height: 80px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 20px; /* Espaciado a la derecha */
+}
+
+.footer {
+  background-color: #ccc;
+  color: #000;
+  padding: 2rem 0;
+  height: 30vh; /* Esto hace que ocupe toda la altura de la ventana */
+}
+
+.footer-title {
+  margin-top: 50px; /* Ajusta el tamaño según sea necesario */
 }
