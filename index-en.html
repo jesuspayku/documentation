@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <!-- Selector alineado a la izquierda -->
-                    <select id="page-selector" class="form-select w-auto" onchange="changePage()">
+                    <select id="page-selector-lg-md" class="form-select w-auto" onchange="changePage()">
                         <option value="">-Versiones-</option>
                         <option value="https://jesuspayku.github.io/docs-apirest/index-cl-en-v1.html">2.1.01</option>
                     </select>
@@ -50,7 +50,7 @@
                 <div>
                     <!-- Banderas (se posicionan encima del selector en móviles) -->
                     <div class="mb-3">
-                        <a href="https://jesuspayku.github.io/documentation/" onchange="changePage()" class="head-links me-3">
+                        <a href="https://jesuspayku.github.io/documentation/" class="head-links me-3">
                             ES
                             <img src="assets/img/icons/chile.png" class="flag-head-icons flag-centered">
                         </a>
@@ -60,7 +60,7 @@
                         </a>
                     </div>
                     <!-- Selector (completo en móviles) -->
-                    <select id="page-selector" class="form-select w-100" onchange="changePage()">
+                    <select id="page-selector-sm-xs" class="form-select w-100" onchange="changePage()">
                         <option value="">--Seleccionar--</option>
                         <option value="https://jesuspayku.github.io/docs-apirest/index-cl-en-v1.html">2.1.01</option>
                     </select>
@@ -244,9 +244,14 @@
         </footer>
         <script>
             function changePage() {
-                const selectedPage = document.getElementById('page-selector').value;
-                if (selectedPage) {
-                    window.location.href = selectedPage;
+                const selectedPageLgMd = document.getElementById('page-selector-lg-md').value;
+                const selectedPageSmXs = document.getElementById('page-selector-sm-xs').value;
+                if (selectedPageLgMd) {
+                    window.location.href = selectedPageLgMd;
+                }
+
+                if (selectedPageSmXs) {
+                    window.location.href = selectedPageSmXs;
                 }
             }
         </script>
