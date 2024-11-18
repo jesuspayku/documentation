@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <!-- Selector alineado a la izquierda -->
-                    <select class="form-select w-auto page-selector" onchange="changePage()">
+                    <select id="page-selector-lg-md" class="form-select w-auto" onchange="changePage()">
                         <option value="">-Versiones-</option>
                         <option value="https://jesuspayku.github.io/docs-apirest/index-cl-es-v1.html">2.1.01</option>
                     </select>
@@ -59,7 +59,7 @@
                         </a>
                     </div>
                     <!-- Selector (completo en móviles) -->
-                    <select class="form-select w-100 page-selector" onchange="changePage()">
+                    <select id="page-selector-sm-xs" class="form-select w-100" onchange="changePage()">
                         <option value="">--Seleccionar--</option>
                         <option value="https://jesuspayku.github.io/docs-apirest/index-cl-es-v1.html">2.1.01</option>
                     </select>
@@ -245,9 +245,15 @@
         </footer>
         <script>
             function changePage() {
-                const selectedPage = document.getElementByClass('page-selector').value;
-                if (selectedPage) {
-                    window.location.href = selectedPage;
+
+                const selectedPageLgMd = document.getElementById('page-selector-lg-md').value;
+                const selectedPageSmXs = document.getElementById('page-selector-sm-xs').value;
+                if (selectedPageLgMd) {
+                    window.location.href = selectedPageLgMd;
+                }
+
+                if (selectedPageSmXs) {
+                    window.location.href = selectedPageSmXs;
                 }
             }
         </script>
